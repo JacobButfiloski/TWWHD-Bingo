@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+  <title>The Wind Waker HD Bingo</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+  <script src="js/seededrandom.js"></script>
+  <script src="js/jsrand.min.js"></script>
+	<script src="js/querystr.js"></script>
+	<script src="js/seedrandom-min.js"></script>
+</head>
+<body>
+  	<div id ="wrap"><div id="main">
+  		<div class="container" id="pageContent">
+  			<script src="js/seedrandom-min.js"></script>
+  			<script src="js/setup.js"></script>
+  			<script src="http://peterolson.github.com/BigInteger.js/BigInteger.min.js"></script>
+  			<div id="bingoPage">
+  		<div id="about">
+  			<!--<h1>TWWHD Bingo</h1>-->
+  			<img src="content/images/logo.png">
+  			<h1>About The Wind Waker HD Bingo</h1>
+  			<div style="clear:both;"></div>
+  			<p>Bingo is a game mode for The Wind Waker HD.</p>
+  			<p>In order to win, you must complete 5 tasks in a row horizontally, vertically, or diagonally.</p>
+  			<p>The seed number is used to generate the board, changing it will create a new board.</p>
+  			<p>You can click the squares to switch them from green to red, this can help keep track of your progress.</p>
+			  <p></p>
+			  <p>To report bugs please contact me at jakezsrbusiness@gmail.com</p>
+  			<p></p>
+  			<h2>Rules:</h2>
+  			<ul>
+  				<li>All glitches are allowed.</li>
+  				<li>A dungeon is considered "finished" when you step in the warp after the boss fight.</li>
+  				<li>A song or item is considered "gained" when link raises the item over his head or when it is placed in your inventory.</li>
+  				<li>You must start with the race file, this file starts after you get the grapple hook in a file that has done outset escape and has no other progress.</li>
+  			</ul>
+  		</div>
+  		<div id="results">
+			  <p>TWWHD Bingo v1.1rel created by JakeZSR and Azer67</p>
+  				<input type="text" width="80" id="seedinput" class="UITextbox">
+  				<input type="button" id="inputseed" value="Input Seed" class="UIButton" onclick="setSeed();">
+				<table id="bingo">
+					<tr>
+						<td class="popout" id="tlbr">TL-BR</td>
+						<td class="popout" id="col1">C1</td>
+						<td class="popout" id="col2">C2</td>
+						<td class="popout" id="col3">C3</td>
+						<td class="popout" id="col4">C4</td>
+						<td class="popout" id="col5">C5</td>
+					</tr>
+					<tr>
+						<td class="popout" id="row1">R1</td>
+						<td class="row1 col1 tlbr" id="slot1"></td> 
+						<td class="row1 col2" id="slot2"></td> 
+						<td class="row1 col3" id="slot3"></td> 
+						<td class="row1 col4" id="slot4"></td> 
+						<td class="row1 col5 bltr" id="slot5"></td> 
+					</tr>
+					<tr> 
+						<td class="popout" id="row2">R2</td>
+						<td class="row2 col1" id="slot6"></td> 
+						<td class="row2 col2 tlbr" id="slot7"></td> 
+						<td class="row2 col3" id="slot8"></td> 
+						<td class="row2 col4 bltr" id="slot9"></td> 
+						<td class="row2 col5" id="slot10"></td> 
+					</tr>
+					<tr> 
+						<td class="popout" id="row3">R3</td>
+						<td class="row3 col1" id="slot11"></td> 
+						<td class="row3 col2" id="slot12"></td> 
+						<td class="row3 col3 tlbr bltr" id="slot13"></td> 
+						<td class="row3 col4" id="slot14"></td> 
+						<td class="row3 col5" id="slot15"></td> 
+					</tr>
+					<tr> 
+						<td class="popout" id="row4">R4</td>
+						<td class="row4 col1" id="slot16"></td> 
+						<td class="row4 col2 bltr" id="slot17"></td> 
+						<td class="row4 col3" id="slot18"></td> 
+						<td class="row4 col4 tlbr" id="slot19"></td> 
+						<td class="row4 col5" id="slot20"></td> 
+					</tr>
+					<tr> 
+						<td class="popout" id="row5">R5</td>
+						<td class="row5 col1 bltr" id="slot21"></td> 
+						<td class="row5 col2" id="slot22"></td> 
+						<td class="row5 col3" id="slot23"></td> 
+						<td class="row5 col4" id="slot24"></td> 
+						<td class="row5 col5 tlbr" id="slot25"></td> 
+					</tr>
+					<tr>
+						<td class="popout" id="bltr">BL-TR</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+</body>
+</html>
